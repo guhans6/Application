@@ -4,6 +4,7 @@ import java.util.Scanner;
 class App {
 
     private Scanner scanner;
+    int choice = 0;
 
     void menu() {
         scanner = new Scanner(System.in);
@@ -14,7 +15,6 @@ class App {
         String email;
         String password;
         while(menu) {
-            int choice = 0;
             System.out.println("1. Sign Up");
             System.out.println("2. Login");
             System.out.println("3. Exit");
@@ -63,7 +63,6 @@ class App {
 
     void userMenu() {
         boolean menu = true;
-        int choice;
         while(menu) {
             System.out.println("1. Create Post");
             System.out.println("2. Share Post");
