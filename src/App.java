@@ -69,7 +69,11 @@ class App {
             System.out.println("3. Add Friend");
             System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
-            choice = scanner.nextInt();
+            try {
+                choice = scanner.nextInt(); }
+                catch(InputMismatchException e) {
+                    System.out.println("Enter correct choice!");
+                }
             scanner.nextLine();
             if(choice == 1) {
                 System.out.println("Enter your post: ");
